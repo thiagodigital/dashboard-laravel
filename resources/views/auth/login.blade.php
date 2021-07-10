@@ -7,11 +7,12 @@
                         src="{{ asset('/assets/img/login-office.jpeg') }}" alt="Office" />
                     <img aria-hidden="true" class="hidden object-cover w-full h-full dark:block"
                         src="{{ asset('/assets/img/login-office-dark.jpeg') }}" alt="Office" />
+                    {{-- <x-jet-authentication-card-logo /> --}}
                 </div>
                 <div class="items-center justify-center p-6 sm:p-12 md:w-1/2">
-                    <x-slot name="logo">
-                        <x-jet-authentication-card-logo />
-                    </x-slot>
+                    <h1 class="mb-4 text-xl font-semibold text-gray-700 dark:text-gray-200">
+                        {{ __('Login') }}
+                    </h1>
 
                     <x-jet-validation-errors class="mb-4" />
 
